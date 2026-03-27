@@ -1,0 +1,31 @@
+import { createBrowserRouter } from "react-router";
+import { Layout } from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Events from "./pages/Events";
+import EventDetail from "./pages/EventDetail";
+import Calendar from "./pages/Calendar";
+import Payment from "./pages/Payment";
+import Partnership from "./pages/Partnership";
+import Contact from "./pages/Contact";
+import Membership from "./pages/Membership";
+import NotFound from "./pages/NotFound";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: Layout,
+    children: [
+      { index: true, Component: Home },
+      { path: "about", Component: About },
+      { path: "events", Component: Events },
+      { path: "events/:eventId", Component: EventDetail },
+      { path: "calendar", Component: Calendar },
+      { path: "payment", Component: Payment },
+      { path: "partnership", Component: Partnership },
+      { path: "contact", Component: Contact },
+      { path: "membership", Component: Membership },
+      { path: "*", Component: NotFound },
+    ],
+  }
+])
