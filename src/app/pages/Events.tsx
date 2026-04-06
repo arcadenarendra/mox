@@ -94,81 +94,68 @@ export default function Events() {
   const getSampleEvents = (): Event[] => [
     {
       id: '1',
-      title: 'Annual Business Summit 2026',
-      description: 'Join industry leaders for our flagship annual event featuring keynote speakers, panel discussions, and networking opportunities.',
-      date: '2026-04-15',
-      time: '09:00',
-      location: 'Brussels Convention Center',
+      title: 'X Got Talent',
+      description: "MoX's biggest annual showcase event — an open stage where Masters students perform in front of the entire Polytechnique community. From music and comedy to dance and spoken word, X Got Talent celebrates the creative talent of MX.",
+      date: '2026-02-15',
+      time: '19:00',
+      location: 'Grand Hall, École Polytechnique',
       image_url: '/images/events/event-1.jpg',
-      category: 'Conference',
+      category: 'Showcase',
       status: 'upcoming',
-      price: 150,
+      price: 0,
       max_attendees: 500
     },
     {
       id: '2',
-      title: 'Professional Development Workshop',
-      description: 'Enhance your skills with expert-led training sessions covering the latest industry trends and best practices.',
-      date: '2026-04-22',
-      time: '14:00',
-      location: 'Association Headquarters',
+      title: 'MScT Gala',
+      description: 'The annual formal gala for all Masters students — an evening of celebration, networking, and elegance bringing together the MX community at the end of the year.',
+      date: '2026-06-20',
+      time: '20:00',
+      location: 'Le Pavillon Royal, Paris',
       image_url: '/images/events/event-2.jpg',
-      category: 'Workshop',
+      category: 'Social',
       status: 'upcoming',
-      price: 75,
-      max_attendees: 50
+      price: 60,
+      max_attendees: 400
     },
     {
       id: '3',
-      title: 'Networking Mixer',
-      description: 'Connect with fellow professionals in a relaxed setting. Includes refreshments and interactive activities.',
-      date: '2026-05-10',
-      time: '18:00',
-      location: 'The Grand Hotel Brussels',
+      title: 'Bloom X Party',
+      description: 'MoX\'s signature social event welcoming the new Masters cohort at the start of the academic year — a night to connect, celebrate, and kick off the year together.',
+      date: '2026-09-10',
+      time: '21:00',
+      location: 'K-Fêt, École Polytechnique',
       image_url: '/images/events/event-3.jpg',
-      category: 'Networking',
+      category: 'Party',
       status: 'upcoming',
-      price: 0,
-      max_attendees: 100
-    },
-    {
-      id: '4',
-      title: 'Innovation Summit 2026',
-      description: 'Explore cutting-edge innovations and technologies shaping the future of our industry.',
-      date: '2026-06-05',
-      time: '10:00',
-      location: 'European Innovation Center',
-      image_url: '/images/events/event-4.jpg',
-      category: 'Conference',
-      status: 'upcoming',
-      price: 200,
+      price: 15,
       max_attendees: 300
     },
     {
-      id: '5',
-      title: 'Winter Gala 2025',
-      description: 'Our annual celebration brought together members for an evening of recognition and celebration.',
-      date: '2025-12-15',
-      time: '19:00',
-      location: 'Royal Palace Brussels',
-      image_url: '/images/events/event-5.jpg',
-      category: 'Social',
-      status: 'past',
-      price: 100,
-      max_attendees: 200
+      id: '4',
+      title: 'Company Cocktail Evenings',
+      description: 'Intimate evening events where MoX partner companies meet Masters students in a relaxed, professional setting — combining networking with genuine conversation.',
+      date: '2026-03-05',
+      time: '18:30',
+      location: 'Drahi X-Novation Center',
+      image_url: '/images/events/event-4.jpg',
+      category: 'Networking',
+      status: 'upcoming',
+      price: 0,
+      max_attendees: 80
     },
     {
-      id: '6',
-      title: 'Leadership Forum 2025',
-      description: 'Past event featuring distinguished speakers sharing insights on effective leadership.',
-      date: '2025-10-20',
+      id: '5',
+      title: 'Community Outings',
+      description: 'From group hikes in the Chevreuse Valley to visits to Park Astérix — MoX organises regular social outings to help students step off campus and connect.',
+      date: '2026-05-15',
       time: '09:00',
-      location: 'Brussels Business Center',
-      image_url: '/images/events/event-6.jpg',
-      category: 'Conference',
-      status: 'past',
-      price: 125,
-      max_attendees: 150
+      location: 'Park Astérix / Chevreuse',
+      image_url: '/images/events/event-5.jpg',
+      category: 'Outing',
+      status: 'upcoming',
+      price: 35,
+      max_attendees: 100
     }
   ];
 
@@ -232,10 +219,9 @@ export default function Events() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Events</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">MoX Events</h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            Discover our upcoming events and explore past activities. Join us for networking, 
-            learning, and professional growth opportunities.
+            From flagship celebrations to company cocktails — MoX brings the Masters community to life throughout the year.
           </p>
         </div>
       </section>
@@ -322,23 +308,35 @@ export default function Events() {
         </div>
       </section>
 
+      {/* Weekly Activities Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Weekly Activities</h2>
+          <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Beyond our major flagship events, MoX and our associated student clubs (binets) host a variety of recurring weekly activities designed to keep the community active, engaged, and connected. 
+            </p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-700">
+              <li><strong>Professional Development:</strong> Small-group workshops on CV building, interview prep, and technical skills.</li>
+              <li><strong>Sports & Wellness:</strong> Weekly football matches, running clubs, and bouldering sessions.</li>
+              <li><strong>Arts & Culture:</strong> Music jam sessions, cooking classes by MXter Chef, and game nights hosted by JeuX.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Don't Miss Out</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Mark Your Calendar</h2>
           <p className="text-lg text-gray-700 mb-8">
-            View all our events in the calendar or become a member to get exclusive access to member-only events.
+            View all our upcoming activities, workshops, and flagship events in one place.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/calendar">
               <Button size="lg">
-                View Calendar
+                View Full Calendar
                 <Calendar className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/membership">
-              <Button size="lg" variant="outline">
-                Become a Member
               </Button>
             </Link>
           </div>

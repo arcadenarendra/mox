@@ -54,33 +54,33 @@ export default function About() {
   const getSampleMembers = (): CommitteeMember[] => [
     {
       id: '1',
-      name: 'Prakhar Tiwari',
-      role: 'Ai-Vic',
-      bio: 'Sponsorship & External Relations Lead',
-      image_url: 'images/team/member-1.jpeg',
+      name: '[President Name]',
+      role: 'President',
+      bio: '[Programme] - Leading the association to ensure our strategic objectives are consistently met.',
+      image_url: '/images/team/member-1.jpeg',
       order: 1
     },
     {
       id: '2',
-      name: 'George EL KERR',
-      role: 'EESM-Vic',
-      bio: 'Secretary General',
+      name: '[VP Name]',
+      role: 'Vice President',
+      bio: '[Programme] - Supporting all internal operations and driving our key initiatives.',
       image_url: '/images/team/member-2.jpeg',
       order: 2
     },
     {
       id: '3',
-      name: 'Emma Rodriguez',
-      role: 'Treasurer',
-      bio: 'Ensuring financial sustainability and transparency.',
+      name: '[External Relations Name]',
+      role: 'External Relations & Sponsorship Manager',
+      bio: '[Programme] - Building powerful partnerships between MoX and global companies.',
       image_url: '/images/team/member-3.jpeg',
       order: 3
     },
     {
       id: '4',
-      name: 'David Okonkwo',
-      role: 'Secretary',
-      bio: 'Committed to clear communication and member support.',
+      name: '[Treasurer Name]',
+      role: 'Treasurer',
+      bio: '[Programme] - Managing club funds and ensuring financial sustainability.',
       image_url: '/images/team/member-4.jpeg',
       order: 4
     }
@@ -89,19 +89,19 @@ export default function About() {
   const coreValues = [
     {
       title: 'Excellence',
-      description: 'We strive for the highest standards in everything we do.'
+      description: 'Our students are selected from a global pool through one of the most rigorous academic selection processes in the world. We hold ourselves to the same standard in everything MoX does.'
     },
     {
       title: 'Integrity',
-      description: 'We maintain transparency and ethical conduct in all our operations.'
+      description: 'We act as the trusted voice between Masters students and the school administration, always representing our community with full transparency and honesty.'
     },
     {
       title: 'Innovation',
-      description: 'We embrace new ideas and encourage creative problem-solving.'
+      description: 'With programmes like ViCAI and DSAIB, our students are building the future of AI and data science. MoX reflects that same spirit of creative ambition.'
     },
     {
-      title: 'Collaboration',
-      description: 'We believe in the power of working together to achieve common goals.'
+      title: 'Community',
+      description: 'With 40+ nationalities in one cohort, MoX is one of the most internationally diverse student bodies in France. We celebrate and build on that richness every day.'
     }
   ];
 
@@ -110,9 +110,9 @@ export default function About() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About MoX</h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            Learn more about our mission, values, and the dedicated team behind our association.
+            Learn about the association, our mission, and the team representing the MX community at École Polytechnique.
           </p>
         </div>
       </section>
@@ -125,18 +125,25 @@ export default function About() {
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Founded in 2010, our association has grown from a small group of dedicated professionals 
-                  into a thriving community of industry leaders, innovators, and change-makers. We are 
-                  committed to fostering excellence and supporting the professional development of our members.
+                  MoX — the Masters Association of École Polytechnique (l'X) — is the permanent 
+                  student body representing all students in the Masters of Science and Technology (MScT) programme.
                 </p>
                 <p>
-                  Over the years, we have organized hundreds of events, facilitated countless networking 
-                  opportunities, and provided invaluable resources to help our members succeed in their careers.
+                  Our community of ~300 students, growing to ~400, comes from over 40 countries and studies 
+                  across some of the most specialised and competitive postgraduate programmes in Europe: 
+                  from Visual & Creative AI (ViCAI) and Data Science & AI for Business (DSAIB) to energy 
+                  transition, economics, and beyond.
                 </p>
                 <p>
-                  Today, we are proud to serve over 5,000 members across Europe, offering a platform for 
-                  collaboration, learning, and growth that continues to evolve with the changing needs of 
-                  our professional community.
+                  We oversee all Masters student clubs (binets), fund their activities, and serve as the 
+                  institutional representative of the MX community — engaging regularly with the school 
+                  administration, including the Directrice Générale of École Polytechnique. We also play 
+                  a key role in co-organising X-Forum, the school's prestigious annual career forum.
+                </p>
+                <p>
+                  MoX is more than a student association — we are the permanent institutional body for the 
+                  MX community at one of the world's most historically significant and selective engineering 
+                  institutions, founded in 1794 by the French Republic and shaped by Napoleon.
                 </p>
               </div>
             </div>
@@ -144,10 +151,34 @@ export default function About() {
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <ImageWithFallback
                   src="/images/about-office.jpg"
-                  alt="Our office"
+                  alt="École Polytechnique campus"
                   className="w-full h-full object-cover"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Stats */}
+      <section className="py-12 bg-[#0f3d5f] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">300+</div>
+              <div className="text-blue-200">Students (growing to 400+)</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">40+</div>
+              <div className="text-blue-200">Nationalities</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">10+</div>
+              <div className="text-blue-200">Masters programmes</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">Top 10</div>
+              <div className="text-blue-200">Global ranking (QS)</div>
             </div>
           </div>
         </div>
@@ -241,38 +272,20 @@ export default function About() {
                     <div>
                       <p className="font-semibold">Address</p>
                       <p className="text-gray-600">
-                        123 Professional Avenue<br />
-                        Brussels, 1000<br />
-                        Belgium
+                        École Polytechnique<br />
+                        Route de Saclay<br />
+                        91128 Palaiseau, Île-de-France<br />
+                        France
                       </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Phone className="h-5 w-5 text-[#0f3d5f] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Phone</p>
-                      <a href="tel:+32123456789" className="text-gray-600 hover:text-[#0f3d5f]">
-                        +32 1 234 567 89
-                      </a>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Mail className="h-5 w-5 text-[#0f3d5f] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:info@association.eu" className="text-gray-600 hover:text-[#0f3d5f]">
-                        info@association.eu
+                      <a href="mailto:mox@polytechnique.fr" className="text-gray-600 hover:text-[#0f3d5f]">
+                        mox@polytechnique.fr
                       </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Clock className="h-5 w-5 text-[#0f3d5f] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Office Hours</p>
-                      <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 5:00 PM<br />
-                        Saturday - Sunday: Closed
-                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -282,7 +295,7 @@ export default function About() {
               <Card className="h-full">
                 <CardContent className="p-0 h-full min-h-[400px]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.1983449613245!2d4.3515!3d50.8465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUwJzQ3LjQiTiA0wrAyMScwNS40IkU!5e0!3m2!1sen!2sbe!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.203612502685!2d2.208462015668615!3d48.71343767927318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67f53f6c8d7b3%3A0x8e87491cf5480ba0!2s%C3%89cole%20Polytechnique!5e0!3m2!1sen!2sus!4v1689255555555!5m2!1sen!2sus"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

@@ -8,7 +8,9 @@ import Calendar from "./pages/Calendar";
 import Payment from "./pages/Payment";
 import Partnership from "./pages/Partnership";
 import Contact from "./pages/Contact";
-import Membership from "./pages/Membership";
+import Clubs from "./pages/Clubs";
+import Programmes from "./pages/Programmes";
+import XForum from "./pages/XForum";
 import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
@@ -23,8 +25,10 @@ export const router = createBrowserRouter([
       { path: "calendar", Component: Calendar },
       { path: "payment", Component: Payment },
       { path: "partnership", Component: Partnership },
+      { path: "clubs", Component: Clubs },
+      { path: "programmes", Component: Programmes },
+      { path: "xforum", Component: XForum },
       { path: "contact", Component: Contact },
-      { path: "membership", Component: Membership },
       { path: "*", Component: NotFound },
     ],
   }

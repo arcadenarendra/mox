@@ -49,10 +49,12 @@ export default function Calendar() {
   };
 
   const getSampleEvents = (): Event[] => [
-    { id: '1', title: 'Annual Business Summit 2026', date: '2026-04-15', time: '09:00', category: 'Conference', status: 'upcoming' },
-    { id: '2', title: 'Professional Development Workshop', date: '2026-04-22', time: '14:00', category: 'Workshop', status: 'upcoming' },
-    { id: '3', title: 'Networking Mixer', date: '2026-05-10', time: '18:00', category: 'Networking', status: 'upcoming' },
-    { id: '4', title: 'Innovation Summit 2026', date: '2026-06-05', time: '10:00', category: 'Conference', status: 'upcoming' },
+    { id: '1', title: 'Bloom X Party', date: '2026-09-10', time: '21:00', category: 'Party', status: 'upcoming' },
+    { id: '2', title: 'X-Forum Career Fair', date: '2026-10-15', time: '09:00', category: 'Partnership', status: 'upcoming' },
+    { id: '3', title: 'MScT Registration Deadline', date: '2026-08-30', time: '23:59', category: 'Academic', status: 'upcoming' },
+    { id: '4', title: 'X Got Talent', date: '2026-02-15', time: '19:00', category: 'Showcase', status: 'upcoming' },
+    { id: '5', title: 'MScT Gala', date: '2026-06-20', time: '20:00', category: 'Social', status: 'upcoming' },
+    { id: '6', title: 'Company Cocktail', date: '2026-03-05', time: '18:30', category: 'Networking', status: 'upcoming' },
   ];
 
   const getDaysInMonth = (date: Date) => {
@@ -102,9 +104,9 @@ export default function Calendar() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Event Calendar</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">MoX Calendar</h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            View all our events at a glance. Plan ahead and never miss an important date.
+            Stay up to date with all MoX events, deadlines, and key academic dates.
           </p>
         </div>
       </section>
@@ -112,6 +114,15 @@ export default function Calendar() {
       {/* Calendar Section */}
       <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">What's on the Calendar?</h2>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <li><strong>MoX Events:</strong> Gala, Bloom X, X Got Talent, cocktails, and trips.</li>
+              <li><strong>Club Events:</strong> Gatherings by PolitiX, MX Arts, MXter Chef, JeuX, etc.</li>
+              <li><strong>Academic Dates:</strong> Exam periods, MScT registration deadlines, and holidays.</li>
+              <li><strong>Partnership Events:</strong> Company visits, workshops, and embedded programmes.</li>
+            </ul>
+          </div>
           <div className="grid lg:grid-cols-3 gap-6">
             {/* Calendar */}
             <div className="lg:col-span-2">
@@ -236,16 +247,16 @@ export default function Calendar() {
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Ready to Join?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Have an Event to Add?</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Become a member to get early access to event registrations and exclusive member-only events.
+            Are you a MoX club (binet) or an academic coordinator? Let us know so we can add your event to the official calendar.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/events">
-              <Button size="lg">Browse All Events</Button>
+            <Link to="/contact">
+              <Button size="lg">Contact Us</Button>
             </Link>
-            <Link to="/membership">
-              <Button size="lg" variant="outline">Become a Member</Button>
+            <Link to="/events">
+              <Button size="lg" variant="outline">Browse All Events</Button>
             </Link>
           </div>
         </div>

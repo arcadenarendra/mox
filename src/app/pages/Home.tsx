@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
-import { ArrowRight, Users, Calendar, Award, FileText } from 'lucide-react';
+import { ArrowRight, Calendar, Megaphone, Briefcase, Handshake } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -49,64 +49,53 @@ export default function Home() {
   const getSampleFeaturedEvents = (): Event[] => [
     {
       id: '1',
-      title: 'Annual Business Summit 2026',
-      date: '2026-04-15',
+      title: 'MX Bloom',
+      date: '2026-03-20',
       image_url: '/images/events/event-1.jpg',
-      description: 'Join industry leaders for our flagship annual event.'
+      description: 'The annual celebration of the blooming MX community, featuring music, food, and incredible networking.'
     },
     {
       id: '2',
-      title: 'Professional Development Workshop',
-      date: '2026-04-22',
+      title: 'Park Asterisk Trip',
+      date: '2026-05-15',
       image_url: '/images/events/event-2.jpg',
-      description: 'Enhance your skills with expert-led training sessions.'
+      description: 'A thrilling day out for students to take a break from studies and enjoy the iconic Park Asterisk.'
     }
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Building Excellence Together
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-white/90">
-                A professional community dedicated to innovation, collaboration, and continuous growth.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/membership">
-                  <Button size="lg" variant="secondary" className="group">
-                    Become a Member
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-2xl">
-                <ImageWithFallback
-                  src="/images/hero-team.png"
-                  alt="Professional team collaboration"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+      <section
+        className="relative bg-cover bg-center text-white"
+        style={{ backgroundImage: "url('/images/hero-team.png')" }}
+      >
+        {/* Overlay to ensure text visibility */}
+        <div className="absolute inset-0 bg-[#0f3d5f]/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 flex flex-col items-center text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
+            The Voice of Masters Students at École Polytechnique
+          </h1>
+          <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
+            MoX represents 350+ graduate students across AI, data science, finance, energy, and beyond — one of the world's most selective and internationally diverse academic communities.
+          </p>
         </div>
       </section>
 
       {/* Mission Statement */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            We are committed to fostering a vibrant community of professionals who strive for excellence, 
-            embrace innovation, and support one another's growth. Through networking events, educational 
-            programs, and collaborative initiatives, we empower our members to achieve their full potential 
-            and make meaningful contributions to their fields.
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">What is MoX?</h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            MoX is the official student body for all Masters of Science and Technology (MScT) students at École Polytechnique or l'X. We represent ~350 students from over 40 countries, studying across specialised programmes in AI, data science, energy transition, visual computing, and more.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            We oversee all Masters student clubs (binets), manage their budgets, and organise major events like MX Bloom, Trip to Park Asterisk and much more. Throughout the year, we also serve as the institutional bridge between students and the school administration — including regular engagement with the Directrice Générale of École Polytechnique.
+          </p>
+          <p className="text-lg text-gray-900 font-medium leading-relaxed">
+            MoX is not a club. We are the student body for the entire MX community.
           </p>
         </div>
       </section>
@@ -114,18 +103,18 @@ export default function Home() {
       {/* Features */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Why Join Us</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">What MoX Does</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
-                  <Users className="h-8 w-8 text-white" />
+                  <Megaphone className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle>Networking</CardTitle>
+                <CardTitle>Represent</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Connect with like-minded professionals and expand your network across industries.
+                  We are the official institutional voice of all Masters students, engaging directly with school leadership on social and pedagogical matters.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -135,11 +124,11 @@ export default function Home() {
                 <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle>Events</CardTitle>
+                <CardTitle>Organise</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Access exclusive events, workshops, and conferences designed for professional growth.
+                  From X Got Talent and the MScT Gala to hiking trips, company cocktails, career events, and Bloom X — we create the social and cultural life of the MX community.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -147,13 +136,13 @@ export default function Home() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
-                  <Award className="h-8 w-8 text-white" />
+                  <Handshake className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle>Recognition</CardTitle>
+                <CardTitle>Support</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Gain recognition and credibility through our prestigious membership program.
+                  We fund and oversee all Masters student clubs (binets), giving them the resources to run their events, projects, and initiatives throughout the year.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -161,13 +150,13 @@ export default function Home() {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
-                  <FileText className="h-8 w-8 text-white" />
+                  <Briefcase className="h-8 w-8 text-white" />
                 </div>
-                <CardTitle>Resources</CardTitle>
+                <CardTitle>Connect</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Access valuable resources, publications, and industry insights exclusively for members.
+                  We bridge students and companies through partnerships, sponsorships, and career events. MoX co-organises X-Forum, École Polytechnique's prestigious annual career forum.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -188,10 +177,10 @@ export default function Home() {
             </Link>
           </div>
           {loading ? (
-             <div className="grid md:grid-cols-2 gap-8">
-               <Skeleton className="aspect-[16/9] w-full" />
-               <Skeleton className="aspect-[16/9] w-full" />
-             </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Skeleton className="aspect-[16/9] w-full" />
+              <Skeleton className="aspect-[16/9] w-full" />
+            </div>
           ) : (
             <div className="grid md:grid-cols-2 gap-8">
               {featuredEvents.map((event) => (
@@ -205,11 +194,11 @@ export default function Home() {
                   </div>
                   <CardHeader>
                     <div className="text-sm text-[#0f3d5f] font-semibold mb-2">
-                       {new Date(event.date).toLocaleDateString('en-GB', { 
-                          year: 'numeric', 
-                          month: 'long', 
-                          day: 'numeric' 
-                        })}
+                      {new Date(event.date).toLocaleDateString('en-GB', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
                     </div>
                     <CardTitle className="text-xl">{event.title}</CardTitle>
                     <CardDescription className="line-clamp-2">{event.description}</CardDescription>
@@ -232,23 +221,18 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-[#0f3d5f] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Partner with MoX?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Join our growing community of professionals committed to excellence.
+            Connect with 300+ of the world's most talented Masters students at École Polytechnique.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/membership">
-              <Button size="lg" variant="secondary">
-                Become a Member
-              </Button>
-            </Link>
-            <Link to="/partnership">
+            <a href="/partnership-deck.pdf" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#0f3d5f]">
-                Download Brochure
+                Download Partnership Deck
               </Button>
-            </Link>
+            </a>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#0f3d5f]">
+              <Button size="lg" variant="secondary">
                 Contact Us
               </Button>
             </Link>

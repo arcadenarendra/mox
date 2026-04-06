@@ -237,7 +237,6 @@ export default function Payment() {
                               {plan.label}
                             </Label>
                           </div>
-                          <span className="font-semibold text-[#0f3d5f]">€{plan.amount}</span>
                         </div>
                       ))}
                     </RadioGroup>
@@ -247,7 +246,7 @@ export default function Payment() {
                 {/* Amount Input */}
                 {paymentType !== 'membership' && (
                   <div className="space-y-2">
-                    <Label htmlFor="amount">Amount (€)</Label>
+                    <Label htmlFor="amount">Amount</Label>
                     <Input
                       id="amount"
                       type="number"
@@ -316,7 +315,6 @@ export default function Payment() {
                     <>
                       <CreditCard className="mr-2 h-5 w-5" />
                       Proceed to Payment
-                      {amount && ` (€${amount})`}
                     </>
                   )}
                 </Button>

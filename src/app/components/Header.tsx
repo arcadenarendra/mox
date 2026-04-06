@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Info, Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
@@ -6,15 +6,27 @@ import { Button } from './ui/button';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
+  { name: 'Programmes', href: '/programmes' },
   { name: 'Events', href: '/events' },
   { name: 'Calendar', href: '/calendar' },
+  { name: 'Clubs', href: '/clubs' },
   { name: 'Partnership', href: '/partnership' },
+  { name: 'X-Forum', href: '/xforum' },
   { name: 'Contact', href: '/contact' },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -23,8 +35,16 @@ export function Header() {
     return location.pathname.startsWith(path);
   };
 
+  const isHome = location.pathname === '/';
+  const useTransparentBackground = isHome && !scrolled && !mobileMenuOpen;
+
+  const headerClasses = `fixed w-full top-0 z-50 transition-colors duration-300 border-b ${useTransparentBackground
+      ? 'bg-transparent border-transparent'
+      : 'bg-[#0f3d5f] border-white/20 shadow-lg'
+    } text-white`;
+
   return (
-    <header className="bg-[#0f3d5f] text-white sticky top-0 z-50 shadow-lg border-b border-white/20">
+    <header className={headerClasses}>
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4">
           {/* Logo */}

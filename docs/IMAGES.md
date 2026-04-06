@@ -28,6 +28,16 @@ public/
         ├── member-2.jpg       # Michael Chen (Vice President)
         ├── member-3.jpg       # Emma Rodriguez (Treasurer)
         └── member-4.jpg       # David Okonkwo (Secretary)
+   ├── clubs/
+   │   ├── politix.jpg       # PolitiX club hero image
+   │   ├── mx-arts.jpg      # MX Arts club hero image
+   │   └── mxter-chef.jpg   # MXter Chef club hero image
+   ├── programmes/
+   │   ├── vicai.jpg        # ViCAI programme banner
+   │   ├── dsaib.jpg        # DSAIB programme banner
+   │   └── steem.jpg        # STEEM programme banner
+   └── xforum/
+      └── xforum-banner.jpg # X-Forum hero/banner image
 ```
 
 ## Image Requirements
@@ -39,6 +49,9 @@ public/
 - **Partnership** (`partnership.jpg`): 1200x900px (4:3 ratio)
 - **Event Images** (`events/event-*.jpg`): 1920x1080px (16:9 ratio)
 - **Team Member Photos** (`team/member-*.jpg`): Square images, 800x800px recommended
+ - **Club Hero Images** (`clubs/*.jpg`): 1200x800px (3:2 ratio)
+ - **Programme Banners** (`programmes/*.jpg`): 1200x600px (2:1 ratio)
+ - **X-Forum Banner** (`xforum/xforum-banner.jpg`): 1920x600px (wide banner)
 
 ### File Format
 
@@ -80,6 +93,9 @@ Copy your prepared images to the appropriate directories:
 - Partnership image → `public/images/partnership.jpg`
 - Event images → `public/images/events/`
 - Team photos → `public/images/team/`
+ - Clubs hero images → `public/images/clubs/`
+ - Programmes banners → `public/images/programmes/`
+ - X-Forum banner → `public/images/xforum/xforum-banner.jpg`
 
 ### Step 4: Verify the Images
 
@@ -89,6 +105,9 @@ Copy your prepared images to the appropriate directories:
    - About page: Check office image and team member photos
    - Events page: Check all event cards
    - Partnership page: Check partnership image
+   - Clubs page: Check club hero images
+   - Programmes page: Check programme banners
+   - X-Forum page: Check X-Forum banner
 
 ## Image Attribution
 
@@ -120,6 +139,20 @@ Update the `image_url` field in the `committee_members` table:
 UPDATE committee_members 
 SET image_url = '/images/team/member-1.jpg' 
 WHERE id = '1';
+
+### Clubs / Programmes / X-Forum
+
+If you store images for clubs, programmes, or the X-Forum in the database, use the same `image_url` pattern:
+
+```sql
+UPDATE clubs SET image_url = '/images/clubs/politiX.jpg' WHERE id = 'poltix';
+UPDATE programmes SET image_url = '/images/programmes/vicai.jpg' WHERE id = 'vicai';
+UPDATE pages SET image_url = '/images/xforum/xforum-banner.jpg' WHERE slug = 'xforum';
+```
+
+### Payment & Pricing note
+
+- The site UI no longer displays pricing on membership options or on the payment button; numeric `amount` values are still accepted by the backend when submitting payments. Do not rely on images to communicate prices — if you need a visible price graphic, create separate image badges and place them intentionally, but note they will not be used by the payment flow.
 ```
 
 ## Troubleshooting
