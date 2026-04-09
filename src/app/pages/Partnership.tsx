@@ -1,75 +1,11 @@
-import { useState, useEffect } from 'react';
-import { Download, Upload, FileText, Check } from 'lucide-react';
+import { Download, Check } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Label } from '../components/ui/label';
-import { Alert, AlertDescription } from '../components/ui/alert';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import { api } from '../../lib/api';
-import { toast } from 'sonner';
 
 export default function Partnership() {
-  const [brochureUrl, setBrochureUrl] = useState<string | null>(null);
-  const [loadingBrochure, setLoadingBrochure] = useState(true);
-  const [uploadingBrochure, setUploadingBrochure] = useState(false);
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
-
-  useEffect(() => {
-    loadBrochure();
-  }, []);
-
-  const loadBrochure = async () => {
-    try {
-      setLoadingBrochure(true);
-      const response = await api.getBrochureUrl();
-      setBrochureUrl(response.url);
-    } catch (error: any) {
-      console.error('Error loading brochure:', error);
-      // Brochure not found is expected if not uploaded yet
-      if (!error.message?.includes('404')) {
-        toast.error('Failed to load brochure');
-      }
-    } finally {
-      setLoadingBrochure(false);
-    }
-  };
-
-  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      if (file.type !== 'application/pdf') {
-        toast.error('Please select a PDF file');
-        return;
-      }
-      if (file.size > 10 * 1024 * 1024) { // 10MB limit
-        toast.error('File size must be less than 10MB');
-        return;
-      }
-      setSelectedFile(file);
-    }
-  };
-
-  const handleUpload = async () => {
-    if (!selectedFile) {
-      toast.error('Please select a file first');
-      return;
-    }
-
-    try {
-      setUploadingBrochure(true);
-      await api.uploadBrochure(selectedFile);
-      toast.success('Brochure uploaded successfully!');
-      setSelectedFile(null);
-      // Reload brochure URL
-      await loadBrochure();
-    } catch (error: any) {
-      console.error('Error uploading brochure:', error);
-      toast.error(error.message || 'Failed to upload brochure');
-    } finally {
-      setUploadingBrochure(false);
-    }
-  };
+  // Static brochure path: place your PDF at `public/brochure.pdf`
+  const brochureUrl = '/brochure.pdf';
 
   const benefits = [
     {
@@ -119,18 +55,12 @@ export default function Partnership() {
                 maximize your return on investment.
               </p>
               <div className="flex flex-wrap gap-4">
-                {brochureUrl ? (
-                  <a href={brochureUrl} download>
-                    <Button size="lg">
-                      <Download className="mr-2 h-5 w-5" />
-                      Download Brochure
-                    </Button>
-                  </a>
-                ) : (
-                  <Button size="lg" disabled={loadingBrochure}>
-                    {loadingBrochure ? 'Loading...' : 'Brochure Not Available'}
+                <a href={brochureUrl} download>
+                  <Button size="lg">
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Brochure
                   </Button>
-                )}
+                </a>
                 <a href="/contact">
                   <Button size="lg" variant="outline">
                     Contact Us
@@ -175,56 +105,7 @@ export default function Partnership() {
 
       {/* Partnership Tiers removed per request */}
 
-      {/* Admin: Upload Brochure */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center">
-                <Upload className="h-5 w-5 mr-2" />
-                Upload Partnership Brochure (Admin)
-              </CardTitle>
-              <CardDescription>
-                Upload a PDF brochure for partners to download. Maximum file size: 10MB.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {brochureUrl && (
-                <Alert>
-                  <FileText className="h-4 w-4" />
-                  <AlertDescription>
-                    A brochure is currently available. Uploading a new one will replace it.
-                  </AlertDescription>
-                </Alert>
-              )}
-
-              <div className="space-y-2">
-                <Label htmlFor="brochure">Select PDF File</Label>
-                <Input
-                  id="brochure"
-                  type="file"
-                  accept=".pdf"
-                  onChange={handleFileSelect}
-                  disabled={uploadingBrochure}
-                />
-                {selectedFile && (
-                  <p className="text-sm text-gray-600">
-                    Selected: {selectedFile.name} ({(selectedFile.size / 1024 / 1024).toFixed(2)} MB)
-                  </p>
-                )}
-              </div>
-
-              <Button 
-                onClick={handleUpload} 
-                disabled={!selectedFile || uploadingBrochure}
-                className="w-full"
-              >
-                {uploadingBrochure ? 'Uploading...' : 'Upload Brochure'}
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+      {/* Admin upload removed — place brochure at `public/brochure.pdf` to enable download */}
     </div>
   );
 }
