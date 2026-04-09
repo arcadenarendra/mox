@@ -12,7 +12,6 @@ const navigation = [
   { name: 'Calendar', href: '/calendar' },
   { name: 'Clubs', href: '/clubs' },
   { name: 'Partnership', href: '/partnership' },
-  { name: 'X-Forum', href: '/xforum' },
   { name: 'Contact', href: '/contact' },
 ];
 

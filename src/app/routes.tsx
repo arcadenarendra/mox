@@ -9,7 +9,6 @@ import Partnership from "./pages/Partnership";
 import Contact from "./pages/Contact";
 import Clubs from "./pages/Clubs";
 import Programmes from "./pages/Programmes";
-import XForum from "./pages/XForum";
 import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
@@ -26,7 +25,6 @@ export const router = createBrowserRouter([
       { path: "partnership", Component: Partnership },
       { path: "clubs", Component: Clubs },
       { path: "programmes", Component: Programmes },
-      { path: "xforum", Component: XForum },
       { path: "contact", Component: Contact },
       { path: "*", Component: NotFound },
     ],
