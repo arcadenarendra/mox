@@ -404,62 +404,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Find Us</h2>
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Contact Details</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-[#0a203c] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Address</p>
-                      <p className="text-gray-600">
-                        École Polytechnique<br />
-                        Route de Saclay<br />
-                        91128 Palaiseau, Île-de-France<br />
-                        France
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-[#0a203c] flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-semibold">Email</p>
-                      <a href="mailto:mox@polytechnique.fr" className="text-gray-600 hover:text-[#0a203c]">
-                        mox@polytechnique.fr
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div>
-              <Card className="h-full">
-                <CardContent className="p-0 h-full min-h-[400px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.203612502685!2d2.208462015668615!3d48.71343767927318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67f53f6c8d7b3%3A0x8e87491cf5480ba0!2s%C3%89cole%20Polytechnique!5e0!3m2!1sen!2sus!4v1689255555555!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Office location map"
-                    className="rounded-lg"
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Events */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -513,6 +457,8 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* Contact Information removed — content moved into Home earlier. */}
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-50">
