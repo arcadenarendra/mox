@@ -86,39 +86,96 @@ export default function Home() {
   ];
 
   const getSampleMembers = (): CommitteeMember[] => [
-    {
-      id: '1',
-      name: 'Prakhar Tiwar',
-      role: 'President',
-      bio: '[Programme]',
-      image_url: '/images/team/member-1.jpeg',
-      order: 1
-    },
-    {
-      id: '2',
-      name: '[VP Name]',
-      role: 'Vice President',
-      bio: '[Programme]',
-      image_url: '/images/team/member-2.jpeg',
-      order: 2
-    },
-    {
-      id: '3',
-      name: '[External Relations Name]',
-      role: 'External Relations & Sponsorship Manager',
-      bio: '[Programme] - Building powerful partnerships between MoX and global companies.',
-      image_url: '/images/team/member-3.jpeg',
-      order: 3
-    },
-    {
-      id: '4',
-      name: '[Treasurer Name]',
-      role: 'Treasurer',
-      bio: '[Programme] - Managing club funds and ensuring financial sustainability.',
-      image_url: '/images/team/member-4.jpeg',
-      order: 4
-    }
-  ];
+  {
+    id: '1',
+    name: 'George El Kerr',
+    role: 'Secretary General',
+    bio: 'Leading organizational strategy and coordination at EESM.',
+    image_url: '/images/team/member-1.jpeg',
+    order: 1
+  },
+  {
+    id: '2',
+    name: 'Jude Abou Daher',
+    role: 'Communications',
+    bio: 'Handles communications and outreach for EESM.',
+    image_url: '/images/team/member-2.jpeg',
+    order: 2
+  },
+  {
+    id: '3',
+    name: 'Vaughn Janes',
+    role: 'Events',
+    bio: 'Responsible for organizing cybersecurity and event initiatives.',
+    image_url: '/images/team/member-3.jpeg',
+    order: 3
+  },
+  {
+    id: '4',
+    name: 'Nader Al Masri',
+    role: 'Pedagogical Affairs',
+    bio: 'Works on IoT and pedagogical affairs within the committee.',
+    image_url: '/images/team/member-4.jpeg',
+    order: 4
+  },
+  {
+    id: '5',
+    name: 'Eliott Hawley',
+    role: 'Treasurer',
+    bio: 'Manages financial planning and budgeting for EDACF.',
+    image_url: '/images/team/member-5.jpeg',
+    order: 5
+  },
+  {
+    id: '6',
+    name: 'Alonso Hunter',
+    role: 'Clubs',
+    bio: 'Coordinates STEEM clubs and student activities.',
+    image_url: '/images/team/member-6.jpeg',
+    order: 6
+  },
+  {
+    id: '7',
+    name: 'Gabriel Halpin',
+    role: 'Welcoming',
+    bio: 'Leads welcoming and onboarding activities for STEEM.',
+    image_url: '/images/team/member-7.jpeg',
+    order: 7
+  },
+  {
+    id: '8',
+    name: 'Prakhar Tiwari',
+    role: 'Sponsorship & External Relations',
+    bio: 'Handles sponsorships and external partnerships for AI-VIC.',
+    image_url: '/images/team/member-8.jpeg',
+    order: 8
+  },
+  {
+    id: '9',
+    name: 'Abed El Rahman El Khatib',
+    role: 'Academic & Internal Relations',
+    bio: 'Manages academic and internal relations within EESM.',
+    image_url: '/images/team/member-9.jpeg',
+    order: 9
+  },
+  {
+    id: '10',
+    name: 'Jamil Jaber',
+    role: 'Sports',
+    bio: 'Responsible for sports activities under EDACF.',
+    image_url: '/images/team/member-10.jpeg',
+    order: 10
+  },
+  {
+    id: '11',
+    name: 'Aditya Krishnan',
+    role: 'Infrastructure',
+    bio: 'Oversees infrastructure and technical support for TRAI.',
+    image_url: '/images/team/member-11.jpeg',
+    order: 11
+  }
+];
+
 
   const coreValues = [
     {

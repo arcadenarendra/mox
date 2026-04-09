@@ -14,19 +14,6 @@ export type Database = {
     message: string;
     created_at: string;
   };
-  membership_applications: {
-    id: string;
-    full_name: string;
-    email: string;
-    phone: string;
-    address: string;
-    city: string;
-    postal_code: string;
-    country: string;
-    membership_type: string;
-    payment_status: string;
-    created_at: string;
-  };
   events: {
     id: string;
     title: string;
