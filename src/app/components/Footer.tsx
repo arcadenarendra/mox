@@ -30,11 +30,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
-                  About MoX
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/events" className="text-gray-400 hover:text-white transition-colors">
                   Events

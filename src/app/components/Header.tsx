@@ -6,7 +6,6 @@ import InfoButton from './ui/InfoButton';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
   { name: 'Programmes', href: '/programmes' },
   { name: 'Events', href: '/events' },
   { name: 'Calendar', href: '/calendar' },
