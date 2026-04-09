@@ -40,7 +40,7 @@ export function Header() {
 
   const headerClasses = `fixed w-full top-0 z-50 transition-colors duration-300 border-b ${useTransparentBackground
       ? 'bg-transparent border-transparent'
-      : 'bg-[#0f3d5f] border-white/20 shadow-lg'
+      : 'bg-[#0a203c] border-white/20 shadow-lg'
     } text-white`;
 
   return (

@@ -68,7 +68,7 @@ export default function Contact() {
   if (success) {
     return (
       <div className="min-h-screen">
-        <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
+        <section className="bg-gradient-to-br from-[#0a203c] to-[#1a5a7f] text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl text-white/90 max-w-3xl">
@@ -107,7 +107,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0a203c] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl text-white/90 max-w-3xl">
@@ -203,12 +203,12 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#0f3d5f] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#0a203c] rounded-full flex items-center justify-center flex-shrink-0">
                       <Mail className="h-5 w-5 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <a href="mailto:mox@polytechnique.fr" className="text-[#0f3d5f] hover:underline">
+                      <a href="mailto:mox@polytechnique.fr" className="text-[#0a203c] hover:underline">
                         mox@polytechnique.fr
                       </a>
                       <p className="text-sm text-gray-600 mt-1">
@@ -218,12 +218,12 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#0f3d5f] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#0a203c] rounded-full flex items-center justify-center flex-shrink-0">
                       <Phone className="h-5 w-5 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <a href="tel:+32123456789" className="text-[#0f3d5f] hover:underline">
+                      <a href="tel:+32123456789" className="text-[#0a203c] hover:underline">
                         +32 1 234 567 89
                       </a>
                       <p className="text-sm text-gray-600 mt-1">
@@ -233,7 +233,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#0f3d5f] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#0a203c] rounded-full flex items-center justify-center flex-shrink-0">
                       <MapPin className="h-5 w-5 text-white" />
                     </div>
                     <div>

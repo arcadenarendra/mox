@@ -93,7 +93,7 @@ export default function Partnership() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0a203c] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Professional Partnership</h1>
           <p className="text-xl text-white/90 max-w-3xl">
@@ -159,7 +159,7 @@ export default function Partnership() {
             {benefits.map((benefit, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="mx-auto w-12 h-12 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
+                  <div className="mx-auto w-12 h-12 bg-[#0a203c] rounded-full flex items-center justify-center mb-4">
                     <Check className="h-6 w-6 text-white" />
                   </div>
                   <CardTitle className="text-lg">{benefit.title}</CardTitle>

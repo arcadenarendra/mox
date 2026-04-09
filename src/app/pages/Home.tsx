@@ -71,7 +71,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/images/hero-team.png')" }}
       >
         {/* Overlay to ensure text visibility */}
-        <div className="absolute inset-0 bg-[#0f3d5f]/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-[#0a203c]/80 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 flex flex-col items-center text-center">
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-[#0a203c] rounded-full flex items-center justify-center mb-4">
                   <Megaphone className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle>Represent</CardTitle>
@@ -121,7 +121,7 @@ export default function Home() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-[#0a203c] rounded-full flex items-center justify-center mb-4">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle>Organise</CardTitle>
@@ -135,7 +135,7 @@ export default function Home() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-[#0a203c] rounded-full flex items-center justify-center mb-4">
                   <Handshake className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle>Support</CardTitle>
@@ -149,7 +149,7 @@ export default function Home() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="mx-auto w-16 h-16 bg-[#0f3d5f] rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-[#0a203c] rounded-full flex items-center justify-center mb-4">
                   <Briefcase className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle>Connect</CardTitle>
@@ -193,7 +193,7 @@ export default function Home() {
                     />
                   </div>
                   <CardHeader>
-                    <div className="text-sm text-[#0f3d5f] font-semibold mb-2">
+                    <div className="text-sm text-[#0a203c] font-semibold mb-2">
                       {new Date(event.date).toLocaleDateString('en-GB', {
                         year: 'numeric',
                         month: 'long',
@@ -205,7 +205,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <Link to={`/events/${event.id}`}>
-                      <Button variant="link" className="p-0 h-auto text-[#0f3d5f]">
+                      <Button variant="link" className="p-0 h-auto text-[#0a203c]">
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>

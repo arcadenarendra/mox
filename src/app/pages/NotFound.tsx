@@ -26,13 +26,13 @@ export default function NotFound() {
           <div className="pt-6">
             <p className="text-sm text-gray-600 mb-4">You might be interested in:</p>
             <div className="space-y-2 text-sm">
-              <Link to="/events" className="block text-[#0f3d5f] hover:underline">
+              <Link to="/events" className="block text-[#0a203c] hover:underline">
                 Browse Events
               </Link>
-              <Link to="/membership" className="block text-[#0f3d5f] hover:underline">
+              <Link to="/membership" className="block text-[#0a203c] hover:underline">
                 Become a Member
               </Link>
-              <Link to="/contact" className="block text-[#0f3d5f] hover:underline">
+              <Link to="/contact" className="block text-[#0a203c] hover:underline">
                 Contact Us
               </Link>
             </div>

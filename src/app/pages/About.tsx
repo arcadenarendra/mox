@@ -116,7 +116,7 @@ export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0f3d5f] to-[#1a5a7f] text-white py-20">
+      <section className="bg-gradient-to-br from-[#0a203c] to-[#1a5a7f] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About MoX</h1>
           <p className="text-xl text-white/90 max-w-3xl">
@@ -169,7 +169,7 @@ export default function About() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-12 bg-[#0f3d5f] text-white">
+      <section className="py-12 bg-[#0a203c] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
@@ -200,7 +200,7 @@ export default function About() {
             {coreValues.map((value, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-[#0f3d5f]">{value.title}</CardTitle>
+                  <CardTitle className="text-[#0a203c]">{value.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{value.description}</CardDescription>
@@ -250,7 +250,7 @@ export default function About() {
                       />
                     </div>
                     <CardTitle className="text-lg">{member.name}</CardTitle>
-                    <CardDescription className="text-[#0f3d5f] font-semibold">
+                    <CardDescription className="text-[#0a203c] font-semibold">
                       {member.role}
                     </CardDescription>
                   </CardHeader>
@@ -276,7 +276,7 @@ export default function About() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-[#0f3d5f] flex-shrink-0 mt-1" />
+                    <MapPin className="h-5 w-5 text-[#0a203c] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold">Address</p>
                       <p className="text-gray-600">
@@ -288,10 +288,10 @@ export default function About() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Mail className="h-5 w-5 text-[#0f3d5f] flex-shrink-0 mt-1" />
+                    <Mail className="h-5 w-5 text-[#0a203c] flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:mox@polytechnique.fr" className="text-gray-600 hover:text-[#0f3d5f]">
+                      <a href="mailto:mox@polytechnique.fr" className="text-gray-600 hover:text-[#0a203c]">
                         mox@polytechnique.fr
                       </a>
                     </div>

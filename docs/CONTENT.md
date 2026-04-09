@@ -185,7 +185,7 @@ Update `/src/styles/theme.css`:
 
 ```css
 :root {
-  --primary: #0f3d5f;  /* Your brand color */
+  --primary: #0a203c;  /* Your brand color */
   /* Add more color variables */
 }
 ```
