@@ -54,9 +54,9 @@ export default function About() {
   const getSampleMembers = (): CommitteeMember[] => [
     {
       id: '1',
-      name: '[President Name]',
+      name: 'Prakhar Tiwar',
       role: 'President',
-      bio: '[Programme] - Leading the association to ensure our strategic objectives are consistently met.',
+      bio: '[Programme]',
       image_url: '/images/team/member-1.jpeg',
       order: 1
     },
@@ -64,7 +64,7 @@ export default function About() {
       id: '2',
       name: '[VP Name]',
       role: 'Vice President',
-      bio: '[Programme] - Supporting all internal operations and driving our key initiatives.',
+      bio: '[Programme]',
       image_url: '/images/team/member-2.jpeg',
       order: 2
     },
@@ -83,6 +83,14 @@ export default function About() {
       bio: '[Programme] - Managing club funds and ensuring financial sustainability.',
       image_url: '/images/team/member-4.jpeg',
       order: 4
+    },
+     {
+      id: '5',
+      name: 'Admin',
+      role: 'Treasurer',
+      bio: '[Programme] - Managing club funds and ensuring financial sustainability.',
+      image_url: '/images/team/member-4.jpeg',
+      order: 5
     }
   ];
 

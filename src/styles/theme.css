@@ -135,6 +135,8 @@
 
   html {
     font-size: var(--font-size);
+    /* Always reserve vertical scrollbar to prevent layout shift between pages */
+    overflow-y: scroll;
   }
 
   h1 {

@@ -219,20 +219,20 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#0f3d5f] text-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Partner with MoX?</h2>
-          <p className="text-xl mb-8 text-white/90">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Ready to Partner with MoX?</h2>
+          <p className="text-lg text-gray-700 mb-8">
             Connect with 300+ of the world's most talented Masters students at École Polytechnique.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/partnership-deck.pdf" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#0f3d5f]">
+              <Button size="lg" variant="outline" className="border-black text-black hover:bg-black hover:text-white">
                 Download Partnership Deck
               </Button>
             </a>
             <Link to="/contact">
-              <Button size="lg" variant="secondary">
+              <Button size="lg" className="bg-black text-white hover:bg-gray-800">
                 Contact Us
               </Button>
             </Link>
