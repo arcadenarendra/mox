@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Info, Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
+import InfoButton from './ui/InfoButton';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -88,15 +89,19 @@ export function Header() {
               )}
             </button>
 
-            {/* Info icon - visible on desktop only */}
-            <button
-              type="button"
-              className="hidden md:inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-white/10 transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <span className="sr-only">Toggle info</span>
-              <Info className="h-6 w-6" aria-hidden="true" />
-            </button>
+            {/* Info icon with popup - visible on desktop only */}
+            <div className="hidden md:inline-flex">
+              <InfoButton
+                content={
+                  <div>
+                    <p className="font-semibold">Quick Info</p>
+                    <p className="text-sm mt-1">📧 Email: info@mox.org</p>
+                    <p className="text-sm">📞 Phone: +32 123 456 789</p>
+                    <p className="text-sm">📍 Brussels, Belgium</p>
+                  </div>
+                }
+              />
+            </div>
           </div>
         </div>
 
