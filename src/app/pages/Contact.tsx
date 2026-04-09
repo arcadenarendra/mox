@@ -149,7 +149,7 @@ export default function Contact() {
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="john@example.com"
+                        placeholder="mox@polytechnique.fr"
                         required
                       />
                     </div>
@@ -208,8 +208,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <a href="mailto:info@association.eu" className="text-[#0f3d5f] hover:underline">
-                        info@association.eu
+                      <a href="mailto:mox@polytechnique.fr" className="text-[#0f3d5f] hover:underline">
+                        mox@polytechnique.fr
                       </a>
                       <p className="text-sm text-gray-600 mt-1">
                         We'll respond within 24-48 hours
@@ -239,9 +239,11 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">Office</h3>
                       <p className="text-gray-700">
-                        123 Professional Avenue<br />
-                        Brussels, 1000<br />
-                        Belgium
+                        Batiment 78<br />
+                        École Polytechnique<br />
+                        Route de Saclay<br />
+                        91128 Palaiseau, Île-de-France<br />
+                        France
                       </p>
                       <p className="text-sm text-gray-600 mt-1">
                         Visit us during office hours

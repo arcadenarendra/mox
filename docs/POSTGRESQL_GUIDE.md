@@ -311,7 +311,7 @@ INSERT INTO membership_applications
 (full_name, email, phone, address, city, postal_code, country, membership_type, payment_status)
 VALUES (
   'Jane Smith',
-  'jane@example.com',
+  'mox@polytechnique.fr',
   '+32123456789',
   '123 Business Street',
   'Brussels',
@@ -328,7 +328,7 @@ INSERT INTO contact_submissions
 (name, email, subject, message)
 VALUES (
   'Contact Person',
-  'contact@example.com',
+  'mox@polytechnique.fr',
   'Partnership Inquiry',
   'I am interested in partnering with your organization...'
 );

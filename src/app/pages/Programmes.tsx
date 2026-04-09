@@ -7,9 +7,9 @@ export default function Programmes() {
       <section className="space-y-4">
         <h2 className="text-2xl font-semibold">Available Programmes</h2>
         <ul className="list-disc pl-5 text-gray-700">
-          <li>ViCAI — Vision & AI initiatives</li>
-          <li>DSAIB — Data Science & AI for Business</li>
-          <li>STEEM — Science & Tech engagement</li>
+          <li>ViCAI - Vision & AI initiatives</li>
+          <li>DSAIB - Data Science & AI for Business</li>
+          <li>STEEM - Science & Tech engagement</li>
         </ul>
       </section>
     </main>

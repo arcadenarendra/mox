@@ -133,7 +133,7 @@ export default function About() {
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Story</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  MoX — the Masters Association of École Polytechnique (l'X) — is the permanent 
+                  MoX - the Masters Association of École Polytechnique (l'X) - is the permanent 
                   student body representing all students in the Masters of Science and Technology (MScT) programme.
                 </p>
                 <p>
@@ -144,12 +144,12 @@ export default function About() {
                 </p>
                 <p>
                   We oversee all Masters student clubs (binets), fund their activities, and serve as the 
-                  institutional representative of the MX community — engaging regularly with the school 
+                  institutional representative of the MX community - engaging regularly with the school 
                   administration, including the Directrice Générale of École Polytechnique. We also play 
                   a key role in co-organising X-Forum, the school's prestigious annual career forum.
                 </p>
                 <p>
-                  MoX is more than a student association — we are the permanent institutional body for the 
+                  MoX is more than a student association - we are the permanent institutional body for the 
                   MX community at one of the world's most historically significant and selective engineering 
                   institutions, founded in 1794 by the French Republic and shaped by Napoleon.
                 </p>

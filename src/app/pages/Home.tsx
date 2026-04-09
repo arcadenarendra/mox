@@ -79,7 +79,7 @@ export default function Home() {
             The Voice of Masters Students at École Polytechnique
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto font-light leading-relaxed">
-            MoX represents 350+ graduate students across AI, data science, finance, energy, and beyond — one of the world's most selective and internationally diverse academic communities.
+            MoX represents 350+ graduate students across AI, data science, finance, energy, and beyond - one of the world's most selective and internationally diverse academic communities.
           </p>
         </div>
       </section>
@@ -92,7 +92,7 @@ export default function Home() {
             MoX is the official student body for all Masters of Science and Technology (MScT) students at École Polytechnique or l'X. We represent ~350 students from over 40 countries, studying across specialised programmes in AI, data science, energy transition, visual computing, and more.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            We oversee all Masters student clubs (binets), manage their budgets, and organise major events like MX Bloom, Trip to Park Asterisk and much more. Throughout the year, we also serve as the institutional bridge between students and the school administration — including regular engagement with the Directrice Générale of École Polytechnique.
+            We oversee all Masters student clubs (binets), manage their budgets, and organise major events like MX Bloom, Trip to Park Asterisk and much more. Throughout the year, we also serve as the institutional bridge between students and the school administration - including regular engagement with the Directrice Générale of École Polytechnique.
           </p>
           <p className="text-lg text-gray-900 font-medium leading-relaxed">
             MoX is not a club. We are the student body for the entire MX community.
@@ -128,7 +128,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  From X Got Talent and the MScT Gala to hiking trips, company cocktails, career events, and Bloom X — we create the social and cultural life of the MX community.
+                  From X Got Talent and the MScT Gala to hiking trips, company cocktails, career events, and Bloom X - we create the social and cultural life of the MX community.
                 </CardDescription>
               </CardContent>
             </Card>

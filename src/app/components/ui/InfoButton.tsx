@@ -33,7 +33,7 @@ export function InfoButton({ content }: InfoButtonProps) {
           {content ?? (
             <div>
               <p className="font-semibold">Quick Info</p>
-              <p className="text-sm mt-1">Email: info@mox.org</p>
+              <p className="text-sm mt-1">Email: mox@polytechnique.fr</p>
               <p className="text-sm">Phone: +32 123 456 789</p>
             </div>
           )}

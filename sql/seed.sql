@@ -176,17 +176,17 @@ INSERT INTO committee_members (name, role, bio, image_url, "order") VALUES
 INSERT INTO contact_submissions (name, email, subject, message) VALUES
 
 ('John Smith', 
- 'john.smith@example.com', 
+ 'mox@polytechnique.fr', 
  'Inquiry about Corporate Membership', 
  'Hello, I am interested in learning more about corporate membership options for our organization. Could you please send me detailed information about the benefits and pricing?'),
 
 ('Maria Garcia', 
- 'maria.garcia@example.com', 
+ 'mox@polytechnique.fr', 
  'Question about upcoming events', 
  'I would like to know if the Annual Business Summit will have virtual attendance options for international members. Thank you!'),
 
 ('Robert Williams', 
- 'robert.w@example.com', 
+ 'mox@polytechnique.fr', 
  'Partnership Opportunity', 
  'Our company is interested in exploring partnership opportunities with your association. We specialize in professional development training and think there could be synergies. Please contact me to discuss further.');
 
@@ -197,7 +197,7 @@ INSERT INTO contact_submissions (name, email, subject, message) VALUES
 INSERT INTO membership_applications (full_name, email, phone, address, city, postal_code, country, membership_type, payment_status) VALUES
 
 ('Alice Thompson', 
- 'alice.thompson@example.com', 
+ 'mox@polytechnique.fr', 
  '+32 2 123 4567', 
  'Rue de la Loi 100', 
  'Brussels', 
@@ -207,7 +207,7 @@ INSERT INTO membership_applications (full_name, email, phone, address, city, pos
  'completed'),
 
 ('Thomas Mueller', 
- 'thomas.mueller@example.com', 
+ 'mox@polytechnique.fr', 
  '+32 2 234 5678', 
  'Avenue Louise 54', 
  'Brussels', 
@@ -217,7 +217,7 @@ INSERT INTO membership_applications (full_name, email, phone, address, city, pos
  'pending'),
 
 ('Sophie Dubois', 
- 'sophie.dubois@example.com', 
+ 'mox@polytechnique.fr', 
  '+32 2 345 6789', 
  'Boulevard Anspach 111', 
  'Brussels', 

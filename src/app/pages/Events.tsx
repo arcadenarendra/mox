@@ -95,7 +95,7 @@ export default function Events() {
     {
       id: '1',
       title: 'X Got Talent',
-      description: "MoX's biggest annual showcase event — an open stage where Masters students perform in front of the entire Polytechnique community. From music and comedy to dance and spoken word, X Got Talent celebrates the creative talent of MX.",
+      description: "MoX's biggest annual showcase event - an open stage where Masters students perform in front of the entire Polytechnique community. From music and comedy to dance and spoken word, X Got Talent celebrates the creative talent of MX.",
       date: '2026-02-15',
       time: '19:00',
       location: 'Grand Hall, École Polytechnique',
@@ -108,7 +108,7 @@ export default function Events() {
     {
       id: '2',
       title: 'MScT Gala',
-      description: 'The annual formal gala for all Masters students — an evening of celebration, networking, and elegance bringing together the MX community at the end of the year.',
+      description: 'The annual formal gala for all Masters students - an evening of celebration, networking, and elegance bringing together the MX community at the end of the year.',
       date: '2026-06-20',
       time: '20:00',
       location: 'Le Pavillon Royal, Paris',
@@ -121,7 +121,7 @@ export default function Events() {
     {
       id: '3',
       title: 'Bloom X Party',
-      description: 'MoX\'s signature social event welcoming the new Masters cohort at the start of the academic year — a night to connect, celebrate, and kick off the year together.',
+      description: 'MoX\'s signature social event welcoming the new Masters cohort at the start of the academic year - a night to connect, celebrate, and kick off the year together.',
       date: '2026-09-10',
       time: '21:00',
       location: 'K-Fêt, École Polytechnique',
@@ -134,7 +134,7 @@ export default function Events() {
     {
       id: '4',
       title: 'Company Cocktail Evenings',
-      description: 'Intimate evening events where MoX partner companies meet Masters students in a relaxed, professional setting — combining networking with genuine conversation.',
+      description: 'Intimate evening events where MoX partner companies meet Masters students in a relaxed, professional setting - combining networking with genuine conversation.',
       date: '2026-03-05',
       time: '18:30',
       location: 'Drahi X-Novation Center',
@@ -147,7 +147,7 @@ export default function Events() {
     {
       id: '5',
       title: 'Community Outings',
-      description: 'From group hikes in the Chevreuse Valley to visits to Park Astérix — MoX organises regular social outings to help students step off campus and connect.',
+      description: 'From group hikes in the Chevreuse Valley to visits to Park Astérix - MoX organises regular social outings to help students step off campus and connect.',
       date: '2026-05-15',
       time: '09:00',
       location: 'Park Astérix / Chevreuse',
@@ -216,7 +216,7 @@ export default function Events() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">MoX Events</h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            From flagship celebrations to company cocktails — MoX brings the Masters community to life throughout the year.
+            From flagship celebrations to company cocktails - MoX brings the Masters community to life throughout the year.
           </p>
         </div>
       </section>

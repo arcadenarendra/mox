@@ -295,4 +295,4 @@ Suggested update schedule:
 
 ## Support
 
-Need help updating content? Contact info@association.eu
+Need help updating content? Contact mox@polytechnique.fr

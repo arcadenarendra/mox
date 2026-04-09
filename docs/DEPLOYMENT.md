@@ -393,7 +393,7 @@ Monthly costs:
 
 - [Supabase Status](https://status.supabase.com)
 - [Razorpay Status](https://status.razorpay.com)
-- Support email: info@association.eu
+-- Support email: mox@polytechnique.fr
 
 ## Disaster Recovery
 

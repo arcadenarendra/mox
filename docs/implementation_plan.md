@@ -4,8 +4,8 @@ Implement the massive content and structural update as per the "Website Content 
 
 ## Status Update (2026-04-06)
 
-- **Navigation & Footer:** Completed — `src/app/components/Header.tsx` and `src/app/components/Footer.tsx` have been updated to include `Clubs`, `Programmes`, and `X-Forum`, and Footer now shows updated contact and quick links.
-- **Routing:** Partially implemented — header/footer link to `/clubs`, `/programmes`, and `/xforum`, but `src/app/routes.tsx` has not been updated to add those routes. Visiting those links will return the current app `NotFound` route unless routes/pages are added.
+- **Navigation & Footer:** Completed - `src/app/components/Header.tsx` and `src/app/components/Footer.tsx` have been updated to include `Clubs`, `Programmes`, and `X-Forum`, and Footer now shows updated contact and quick links.
+- **Routing:** Partially implemented - header/footer link to `/clubs`, `/programmes`, and `/xforum`, but `src/app/routes.tsx` has not been updated to add those routes. Visiting those links will return the current app `NotFound` route unless routes/pages are added.
 - **Pages:** Core pages (`Home`, `About`, `Events`, `Calendar`, `Partnership`, `Contact`) exist under `src/app/pages/` but need content overhaul per the plan; new pages for `Clubs`, `Programmes`, and `X-Forum` are not present yet.
 - **Membership:** `src/app/pages/Membership.tsx` and the `/membership` route still exist. Decide whether to delete the page and remove the route.
 

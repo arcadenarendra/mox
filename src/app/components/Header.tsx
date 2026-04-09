@@ -94,9 +94,9 @@ export function Header() {
                 content={
                   <div>
                     <p className="font-semibold">Quick Info</p>
-                    <p className="text-sm mt-1">📧 Email: info@mox.org</p>
+                    <p className="text-sm mt-1">📧 Email: mox@polytechnique.fr</p>
                     <p className="text-sm">📞 Phone: +32 123 456 789</p>
-                    <p className="text-sm">📍 Brussels, Belgium</p>
+                    <p className="text-sm">📍 Batiment 78, École Polytechnique, Palaiseau, France</p>
                   </div>
                 }
               />
@@ -126,9 +126,9 @@ export function Header() {
               <div className="hidden md:block pt-4 mt-4 border-t border-white/10">
                 <h3 className="px-3 text-sm font-semibold text-white/90 mb-3">Quick Info</h3>
                 <div className="px-3 space-y-2 text-sm text-white/70">
-                  <p>📧 Email: info@mox.org</p>
+                  <p>📧 Email: mox@polytechnique.fr</p>
                   <p>📞 Phone: +32 123 456 789</p>
-                  <p>📍 Brussels, Belgium</p>
+                  <p>📍 Batiment 78, École Polytechnique, Palaiseau, France</p>
                 </div>
               </div>
             </div>

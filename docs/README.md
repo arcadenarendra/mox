@@ -87,7 +87,7 @@ A production-ready association website built with React, TypeScript, Tailwind CS
 
 ## Support
 
-For questions or issues, please contact info@association.eu
+For questions or issues, please contact mox@polytechnique.fr
 
 ## License
 

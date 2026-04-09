@@ -152,7 +152,7 @@ UPDATE pages SET image_url = '/images/xforum/xforum-banner.jpg' WHERE slug = 'xf
 
 ### Payment & Pricing note
 
-- The site UI no longer displays pricing on membership options or on the payment button; numeric `amount` values are still accepted by the backend when submitting payments. Do not rely on images to communicate prices — if you need a visible price graphic, create separate image badges and place them intentionally, but note they will not be used by the payment flow.
+- The site UI no longer displays pricing on membership options or on the payment button; numeric `amount` values are still accepted by the backend when submitting payments. Do not rely on images to communicate prices - if you need a visible price graphic, create separate image badges and place them intentionally, but note they will not be used by the payment flow.
 ```
 
 ## Troubleshooting
