@@ -1,5 +1,3 @@
-import * as React from 'react';
-import { Link } from 'react-router';
 import {
   Card,
   CardHeader,
@@ -8,6 +6,21 @@ import {
   CardContent,
 } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
+import {
+  Eye,
+  ShieldCheck,
+  BrainCircuit,
+  TrendingUp,
+  Lock,
+  Wifi,
+  Leaf,
+  Zap,
+  Landmark,
+  BarChart2,
+  Database,
+  Briefcase,
+  Clapperboard,
+} from 'lucide-react';
 
 const PROGRAMMES = [
   {
@@ -16,6 +29,8 @@ const PROGRAMMES = [
     title: 'Visual and Creative Artificial Intelligence',
     subtitle: 'Visual and Creative Artificial Intelligence',
     tags: ['Artificial Intelligence'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-programs/artificial-intelligence-advanced-visual-computing-master',
+    icon: Eye,
   },
   {
     id: 'trai',
@@ -23,6 +38,8 @@ const PROGRAMMES = [
     title: 'Trustworthy and Responsible AI',
     subtitle: 'Trustworthy and Responsible AI',
     tags: ['Artificial Intelligence'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/trustworthy-and-responsible-ai-trai',
+    icon: ShieldCheck,
   },
   {
     id: 'llga',
@@ -30,6 +47,8 @@ const PROGRAMMES = [
     title: 'Large Language Models, Graphs & Applications',
     subtitle: 'Large Language Models, Graphs & Applications',
     tags: ['AI', 'Computer Science'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/large-language-models-graphs-and-applications-llga',
+    icon: BrainCircuit,
   },
   {
     id: 'maqi',
@@ -37,6 +56,8 @@ const PROGRAMMES = [
     title: 'AI for Markets and Quantitative Investment (X–ENSAE)',
     subtitle: 'AI for Markets and Quantitative Investment (X–ENSAE)',
     tags: ['AI', 'Finance'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/ai-for-markets-and-quantitative-investment-x-ensae-maqi',
+    icon: TrendingUp,
   },
   {
     id: 'cys',
@@ -44,6 +65,8 @@ const PROGRAMMES = [
     title: 'Cybersecurity',
     subtitle: 'Cybersecurity',
     tags: ['Computer Science'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/cybersecurity-cys',
+    icon: Lock,
   },
   {
     id: 'iot',
@@ -51,6 +74,8 @@ const PROGRAMMES = [
     title: 'Internet of Things: Innovation and Management',
     subtitle: 'Internet of Things: Innovation and Management',
     tags: ['Technology'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-programs/internet-of-things-innovation-and-management',
+    icon: Wifi,
   },
   {
     id: 'eesm',
@@ -58,6 +83,8 @@ const PROGRAMMES = [
     title: 'Environmental Engineering and Sustainability Management',
     subtitle: 'Environmental Engineering and Sustainability Management',
     tags: ['Environment'],
+    url: 'https://programmes.polytechnique.edu/en/master-all-msct-programs/environmental-engineering-and-sustainability-management',
+    icon: Leaf,
   },
   {
     id: 'steem',
@@ -65,6 +92,8 @@ const PROGRAMMES = [
     title: 'Energy Environment: Science Technology and Management',
     subtitle: 'Energy Environment: Science Technology and Management',
     tags: ['Energy', 'Environment'],
+    url: 'https://programmes.polytechnique.edu/en/master-all-msct-programs/energy-environment-science-technology-and-management',
+    icon: Zap,
   },
   {
     id: 'depp',
@@ -72,6 +101,8 @@ const PROGRAMMES = [
     title: 'Data and Economics for Public Policy (X–ENSAE–Telecom)',
     subtitle: 'Data and Economics for Public Policy (X–ENSAE–Telecom)',
     tags: ['Data Science', 'Economy'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/data-and-economics-for-public-policy-x-ensae-telecom-depp',
+    icon: Landmark,
   },
   {
     id: 'edacf',
@@ -79,6 +110,8 @@ const PROGRAMMES = [
     title: 'Economics, Data Analytics and Corporate Finance (X–Bocconi)',
     subtitle: 'Economics, Data Analytics and Corporate Finance (X–Bocconi)',
     tags: ['Economy', 'Finance'],
+    url: 'https://programmes.polytechnique.edu/en/master-all-msct-programs/economics-data-analytics-and-corporate-finance/economics-data-analytics',
+    icon: BarChart2,
   },
   {
     id: 'dddf',
@@ -86,6 +119,8 @@ const PROGRAMMES = [
     title: 'Double Degree Data & Finance (X–HEC)',
     subtitle: 'Double Degree Data & Finance (X–HEC)',
     tags: ['Data Science', 'Finance'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/double-degree-data-finance-x-hec-dddf',
+    icon: Database,
   },
   {
     id: 'dsaib',
@@ -93,6 +128,8 @@ const PROGRAMMES = [
     title: 'Data Science and AI for Business (X–HEC)',
     subtitle: 'Data Science and AI for Business (X–HEC)',
     tags: ['Data Science', 'AI'],
+    url: 'https://programmes.polytechnique.edu/en/master/programs/data-science-for-business-joint-degree-with-hec',
+    icon: Briefcase,
   },
   {
     id: 'excin',
@@ -100,6 +137,8 @@ const PROGRAMMES = [
     title: 'Science & Technology in Extended Cinematography (X–ENS Louis Lumière)',
     subtitle: 'Science & Technology in Extended Cinematography (X–ENS Louis Lumière)',
     tags: ['Technology', 'Arts'],
+    url: 'https://programmes.polytechnique.edu/en/master/all-msct-specializations/science-technology-in-extended-cinematography-excin',
+    icon: Clapperboard,
   },
 ];
 
@@ -119,29 +158,35 @@ export default function Programmes() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {PROGRAMMES.map((p) => (
-              <Card key={p.id} className="h-full hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-lg text-[#0a203c] font-semibold">{p.code}</CardTitle>
-                  <CardDescription className="text-sm text-gray-600">{p.title}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600 line-clamp-3">{p.subtitle}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {p.tags.map((t) => (
-                      <Badge key={t} variant="outline" className="text-xs uppercase">
-                        {t}
-                      </Badge>
-                    ))}
+            {PROGRAMMES.map((p) => {
+              const Icon = p.icon;
+              return (
+                <Card key={p.id} className="h-full hover:shadow-lg transition-shadow overflow-hidden">
+                  <div className="bg-gradient-to-br from-[#0a203c] to-[#1a5a7f] flex items-center justify-center h-32">
+                    <Icon className="text-white/80" size={48} strokeWidth={1.5} />
                   </div>
-                  <div className="mt-4">
-                    <Link to={`/programmes/${p.id}`} className="text-sm text-[#0a203c] underline">
-                      Learn more →
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  <CardHeader>
+                    <CardTitle className="text-lg text-[#0a203c] font-semibold">{p.code}</CardTitle>
+                    <CardDescription className="text-sm text-gray-600">{p.title}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-600 line-clamp-3">{p.subtitle}</p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {p.tags.map((t) => (
+                        <Badge key={t} variant="outline" className="text-xs uppercase">
+                          {t}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="mt-4">
+                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-sm text-[#0a203c] underline">
+                        Learn more →
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

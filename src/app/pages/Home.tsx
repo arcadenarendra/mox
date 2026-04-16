@@ -264,6 +264,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sponsors Banner */}
+      <section className="py-10 border-y border-gray-100 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-8">
+            Proudly supported by
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12">
+            <a href="https://www.societegenerale.com" target="_blank" rel="noopener noreferrer"
+              className="opacity-60 hover:opacity-100 transition-opacity duration-200">
+              <img
+                src="/images/sponsors/sg-logo.png"
+                alt="Société Générale"
+                className="h-[120px] w-auto object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
