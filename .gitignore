@@ -2,3 +2,5 @@ node_modules
 dist
 .claude
 utils/supabase/info.tsx
+.env.local
+.env
